@@ -3,5 +3,5 @@ a = 0
 b = 1
 print("числа фибаначи до", n, ":")
 while a <= n:
-    print(a, end=" ")
+    print(a)
     a, b = b, a + b
