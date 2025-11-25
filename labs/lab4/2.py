@@ -1,6 +1,3 @@
-from statistics import mean
-
-
 mesiac = int(input("Введите номер месяца (от 1 до 12):"))
 if mesiac == 12 or 1 <= mesiac <= 2:
     print("Зима")
