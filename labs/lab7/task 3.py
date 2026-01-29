@@ -5,4 +5,4 @@ personnel = [
 ]
 
 AccessLevels = {1: 'Restricted', 2: 'Confidential', 3: 'Confidential', 4: 'Top Secret'}
-print(list(map(lambda p: {**p, "category": AccessLevels[p["clearance"]]}, personnel)))
+print(list(map(lambda p: {**p, "category": AccessLevels[p["clearance"]]}, personnel))) 
