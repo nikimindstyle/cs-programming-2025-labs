@@ -271,9 +271,7 @@ def open_chest(player):
 def shop(player):
     print("\n Добро пожаловать в магазин странствующего торговца! ")
     print("У вас:", player["inventory"]["coins"], "монет")
-    print(f"\nВаше оружие: {get_weapon_name(player['weapon_level'])}")
-    print(f"Ваша броня: {get_armor_name(player['armor_level'])}")
-    
+    print_status(player)
     can_upgrade_weapon = player["weapon_level"] < 3
     can_upgrade_armor = player["armor_level"] < 3
     
@@ -411,6 +409,6 @@ def game_loop(player):
 
 
 # ====== ЗАПУСК ======
-if __name__ == "__main__":
+if __name__ == "__main__": 
     player = create_character()
     game_loop(player)
